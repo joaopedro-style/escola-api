@@ -16,7 +16,7 @@ app.get('/alunos', (req, res) => {
 });
 
 // Exibindo UM aluno
-app.get('/alunos/1', (req, res) => {
+app.get('/alunos/:id', (req, res) => {
     res.send(`Exibindo dados de UM aluno`);
 });
 
