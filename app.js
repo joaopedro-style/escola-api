@@ -1,4 +1,6 @@
 import express from 'express';
+import { ler } from './src/aluno.js';
+
 
 const app = express();
 const porta = 3000;
@@ -12,7 +14,8 @@ app.get('/', (req, res) => {
 
 // exibindo Todos os alunos
 app.get('/alunos', (req, res) => {
-    res.send(`Exibindo todos os alunos`);
+    // res.send(`Exibindo todos os alunos`);
+    ler(res);
 });
 
 // Exibindo UM aluno
