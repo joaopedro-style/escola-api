@@ -1,11 +1,19 @@
 import mysql from 'mysql2';  // importando o módulo
 
-// Armazenando os dados de conexão
+// conexão LOCAL
+// const conexao = mysql.createConnection({
+   // host: 'localhost',
+    // user: 'root',
+   // password: '',
+  //  database: 'escola-api'
+//});
+
+// conexão REMOTA
 const conexao = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'escola-api'
+    host: 'db4free.net',
+    user: 'testebdjp',
+    password: '123456789tigre',
+    database: 'bancotestejp'
 });
 
 
